@@ -1,3 +1,6 @@
+import styles from "./ProductList.module.css";
+/* * styles = { background: "backgroun_1h28d01niond2d } */
+
 const products = [
     {
         id: 1,
@@ -103,7 +106,7 @@ const ProductList = () => {
 
     return (
         <section id="products">
-            <h2>
+            <h2 className={styles["font-huge"]}>
                 Contenuto lista prodotti
             </h2>
             <div className="container cards-wrapper">

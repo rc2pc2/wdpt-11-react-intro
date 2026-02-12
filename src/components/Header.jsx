@@ -1,12 +1,16 @@
 import Navbar from "./Navbar";
+import Logo from "./Logo";
+import logoImage from "../assets/img/logo.png";
 
 export default function Header() {
     return (
         <header>
-            <figure>
-                <img src="/logo.png" alt="La Molisana Main Logo" />
-            </figure>
+            <Logo
+                image={logoImage}
+                description="Logo principale della molisana"
+            />
             <Navbar />
+
         </header>
     );
 }

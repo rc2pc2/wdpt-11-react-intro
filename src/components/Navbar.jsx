@@ -12,7 +12,9 @@ const Navbar = () => {
     const linksList = links.map(link => {
         return (
             <li key={link.id}>
-                <a href={link.url} className={link.current ? 'active' : ''}>
+                <a href={link.url}
+                    // {/* se il link.current e' truthy ==> assegna active come classe altrimenti non assegnare nulla */}
+                    className={link.current ? 'active' : ''}>
                     {link.text}
                 </a>
             </li>

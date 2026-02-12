@@ -1,3 +1,6 @@
+import Logo from "./Logo";
+import logoImage from "../assets/img/logo.png"; // # thanks to Nicolo
+
 const footerSections = [
     {
         id: 222,
@@ -29,9 +32,10 @@ export default function Footer() {
         <footer className="container">
             <nav className="footer-nav">
                 <div className="footer-col">
-                    <figure>
-                        <img src="/logo.png" alt="La Molisana" />
-                    </figure>
+                    <Logo
+                        image={logoImage}
+                        description="Logo principale della molisana"
+                    />
                 </div>
                 {footerSections.map((section) => (
                     <div className="footer-col" key={section.id}>
